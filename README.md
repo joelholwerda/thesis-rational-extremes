@@ -20,8 +20,9 @@ Alternatively, you can open the Terminal or Command Prompt, navigate to the fold
 
 1. Open the `00_open_project.Rproj` file. This opens a new session in RStudio and sets the working directory to the correct location
 2. Open the `01_simulate_uws.R` file
-3. RStudio might prompt you to install missing packages. Alternatively, you can run the following code: `install.packages("tidyverse", "arrow", "furrr", "parallel", "cowplot", "ggtext", "rlang", "here", "sn")`
-4. Click the "Source" button to run the entire script or highlight sections and press Cmd + Enter
+3. Click the "Source" button to run the entire script or highlight sections and press Cmd + Enter
+
+The `renv` package is used for dependency management. `01_simulate_uws.R` calls `renv::restore()` to install the correct version of each package listed in the `renv.lock` file. More information about the `renv` package can be found [here](https://rstudio.github.io/renv/articles/renv.html).
 
 ## Options
 

@@ -2,6 +2,9 @@
 
 set.seed(1234)
 
+# Use `renv` to ensure that the correct version of each package is installed
+renv::restore()
+
 library(tidyverse)
 library(arrow)
 library(furrr)
